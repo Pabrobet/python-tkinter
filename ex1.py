@@ -42,6 +42,7 @@ class TodoApp(object):
     def addItem(self):
         todo = self.todoText.get()
         self.listbox.insert(tk.END, todo)
+        self.todoText.delete(0, "end")
 
 
 root = tk.Tk()
